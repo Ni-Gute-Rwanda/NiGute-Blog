@@ -29,6 +29,9 @@ body {
     display: inline-block;
     text-align: end;
 }
+#menu-button {
+    display: none;
+}
 .navbar ul li {
     list-style: none;
     display:inline-flex;
