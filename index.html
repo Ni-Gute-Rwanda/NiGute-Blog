@@ -6,6 +6,7 @@
     <title>Ni Gute</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <script src="js/nav.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,10 +14,11 @@
                 <div class="branding">
                     Ni Gute
                 </div>
-                <img src="images/menu-4-xxl.png" id="menu-button">
-                <div class="navbar">
+                <img src="images/menu-4-xxl.png" id="menu-button" onclick="openNav()"/>
+                <p id="close" style="color: rgb(255, 255, 255);" onclick="closeMenu()">X</p>
+                <div class="navbar" id="nav">
                     
-                    <ul>
+                    <ul id="nav-list">
                         <li>Ahabanza</li>
                         <li>Sobanukirwa</li>
                         <li>Ni Gute</li>

@@ -32,6 +32,9 @@ body {
 #menu-button {
     display: none;
 }
+#close {
+    display: none;
+}
 .navbar ul li {
     list-style: none;
     display:inline-flex;
