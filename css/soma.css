@@ -1,0 +1,94 @@
+.post-wrapper hr{
+    margin: 0;
+    top: 0;
+    bottom: 0;
+}
+.post-wrapper h1 {
+    margin: 0;
+    margin-bottom: 0;
+    bottom: 0;
+    top: 0;
+}
+.comments {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 15px 0 15px 0;
+    box-sizing: border-box;
+}
+.submit-comment {
+    width: 100%;
+}
+.submit-comment form {
+    width: 100%;
+    background-color: rgb(218, 202, 178);
+    padding: 20px;
+}
+.comment-wrapper {
+
+}
+.comment-wrapper h1, hr {
+    bottom: 0;
+    margin: 0;
+}
+.submit-comment form input, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 15px;
+}
+.submit-comment button {
+    padding: 10px;
+    background-color: royalblue;
+    color: #fff;
+    border: 0;
+    outline: 0;
+}
+.comment {
+    padding: 10px;
+    margin: 2px auto 2px auto;
+}
+.comment p{
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: 2px;
+    font-weight: bolder;
+    color: rgb(49, 48, 48);
+}
+.comment hr {
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+.comment h5 {
+    top: 0;
+    bottom: 0;
+    margin: 5px;
+}
+.comment-pages {
+    bottom: 0;
+    margin: 0;
+    top: 0;
+}
+.comment-pages p{
+    display: inline-block;
+    background-color: rgb(204, 197, 185);
+    padding: 10px;
+    color: aliceblue;
+}
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: blanchedalmond;
+    position: fixed;
+    box-sizing: border-box;
+  }
+  .progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+    box-sizing: border-box;
+  }
+  .ourvideo iframe {
+      width: 100%;
+      margin: 10px auto 10px auto;
+  }

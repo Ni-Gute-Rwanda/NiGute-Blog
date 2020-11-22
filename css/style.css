@@ -31,6 +31,7 @@ body {
 }
 #menu-button {
     display: none;
+    width: 20px;
 }
 #close {
     display: none;
@@ -46,6 +47,13 @@ body {
 }
 .login {
     background-color: royalblue;
+}
+.login a {
+    color: #fff;
+    text-decoration: none;
+}
+.login:hover {
+    background-color: rgb(59, 76, 128);
 }
 .subscribe-row {
     display: grid;

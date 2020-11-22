@@ -15,5 +15,4 @@ function openNav(){
 function closeMenu(){
     document.getElementById('nav').style.display = "none";
     document.getElementById('close').style.display = "none";
-    document.getElementById('menu-button').style.display = "block";
 }

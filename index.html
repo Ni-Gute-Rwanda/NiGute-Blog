@@ -6,7 +6,16 @@
     <title>Ni Gute</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
     <script src="js/nav.js"></script>
+    <script src="js/login.js"></script>
+    <style>
+        @media(max-width: 1000px){
+            .mpopup-content {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -14,7 +23,7 @@
                 <div class="branding">
                     Ni Gute
                 </div>
-                <img src="images/menu-4-xxl.png" id="menu-button" onclick="openNav()"/>
+                <img src="images/menu-4-xxl.png" id="menu-button" onclick="openNav()" />
                 <p id="close" style="color: rgb(255, 255, 255);" onclick="closeMenu()">X</p>
                 <div class="navbar" id="nav">
                     
@@ -25,9 +34,33 @@
                         <li>Amakuru</li>
                         <li>Twandikire</li>
                         <li>Abo turibo</li>
-                        <li class="login">INJIRA</li>
+                        <li class="login"><a href="javascript:void(0);" id="mpopupLink">INJIRA</a></li>
                     </ul>
                 </div>
+        </div>
+        <div id="mpopupBox" class="mpopup">
+            <!-- mPopup content -->
+            <div class="mpopup-content">
+                <div class="mpopup-head">
+                    <span class="close">×</span>
+                    <h2>Injira mu bugenzuzi</h2>
+                </div>
+                <div class="mpopup-main">
+                    <form>
+                        <!--Add username-->
+                        <label for="username">Izina ukoresha</label>
+                        <input type="text" id="username" style="margin-bottom: 20px;" required>
+                        <!--Add email-->
+                        <label for="useremail">Email</label>
+                        <input type="email" id="useremail" style="margin-bottom: 20px;" required>
+                        <!--Enter to login-->
+                        <input type="submit" value="Injira" id="loginbutton">
+                    </form>
+                </div>
+                <div class="mpopup-foot">
+                    <p>Wifuza gukorana natwe?<a href="#">  Kanda hano</a></p>
+                </div>
+            </div>
         </div>
         <div class="subscribe-row">
             <div class="small-about">
@@ -115,5 +148,33 @@
             <p>Made with love by <a href="#">Achille Songa</a></p>
         </div>
     </div>
+    <!--Login popup script-->
+<script>
+    // get the mPopup
+var mpopup = document.getElementById('mpopupBox');
+
+// get the link that opens the mPopup
+var mpLink = document.getElementById('mpopupLink');
+
+// get the close action element
+var close = document.getElementsByClassName("close")[0];
+
+// open the mPopup once the link is clicked
+mpLink.onclick = function(){
+    mpopup.style.display = "block";
+}
+
+// close the mPopup once close element is clicked
+close.onclick = function(){
+    mpopup.style.display = "none";
+}
+
+// close the mPopup when user clicks outside of the box
+window.onclick = function(event) {
+    if (event.target == mpopup) {
+        mpopup.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
