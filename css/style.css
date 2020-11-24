@@ -233,3 +233,8 @@ body {
 .copyright a {
     color: blanchedalmond;
 }
+#avatar {
+    width: 50%;
+    margin-bottom: 0;
+    bottom: 0;
+}

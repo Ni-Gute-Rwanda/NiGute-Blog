@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ni Gute</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/soma.css"/>
+    <script src="../js/nav.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/soma.js"></script>
+    <style>
+        @media(max-width: 1000px){
+            .mpopup-content {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+        <div class="head-row">
+                <div class="branding">
+                    Ni Gute
+                </div>
+                <img src="images/menu-4-xxl.png" id="menu-button" onclick="openNav()" />
+                <p id="close" style="color: rgb(255, 255, 255);" onclick="closeMenu()">X</p>
+                <div class="navbar" id="nav">
+                    
+                    <ul id="nav-list">
+                        <li>Ahabanza</li>
+                        <li>Inkuru nshya</li>
+                        <li>Inkuru wanditse</li>
+                        <li>Amakuru yawe</li>
+                        <li>Ibitekerezo</li>
+                        <li class="login"><a href="javascript:void(0);" id="mpopupLink">SOHOKA</a></li>
+                    </ul>
+                </div>
+        </div>
+        <div id="mpopupBox" class="mpopup">
+            <!-- mPopup content -->
+            <div class="mpopup-content">
+                <div class="mpopup-head">
+                    <span class="close">×</span>
+                    <h2>Ushaka gusohoka mu bugenzuzi?</h2>
+                </div>
+                <div class="mpopup-main">
+                    <div class="logout-buttons">
+                        <button style="background-color: royalblue;">OYA</button"><button  style="background-color: rgba(131, 30, 30, 0.904);">YEGO</button>
+                    </div>
+                </div>
+                <div class="mpopup-foot">
+                    <p>Ubu ni saa 18:00 78  |  24 ugushyingo 2020</p>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-row">
+            <div class="small-about">
+                <h1>Ni gute Mu Ikoranabuhanga</h1>
+                <p>Ni Gute ni urubuga rugamije gutuma buri muntu wese agira ubumenyi buhagije mu ikoranabuhanga, akaba ashobora kuba yakwikorera byinshi kandi agafasha n'abandi.
+                </p>
+                <button style="background-color: royalblue;">Menya byinshi</button><button style="background-color: rgb(83, 75, 61);">Twandikire</button>
+            </div>
+            
+        </div>
+        <div class="container-2">
+            <div class="posts">
+                <div class="mainpost">
+                    
+                </div>
+            <!--Suggested stories-->
+            <div class="post-wrapper">
+                <h1 id="suggested">Inkuru zose wanditse</h1>
+                <hr>
+                    <div class="post">
+                        <img src="../images/ifoto.jpg" alt="">
+                        <div>
+                            <h1>Umutwe w'inkuru</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eaque asperiores nihil neque quae quisquam, deserunt harum, alias ratione quidem provident mollitia. Deserunt suscipit dolore inventore, necessitatibus hic ratione sapiente.</p>
+                            <div class="post-action">
+                                <button>Soma byose</button><button>Kosora</button><button>Yisibe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="../images/ifoto.jpg" alt="">
+                        <div>
+                            <h1>Umutwe w'inkuru</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eaque asperiores nihil neque quae quisquam, deserunt harum, alias ratione quidem provident mollitia. Deserunt suscipit dolore inventore, necessitatibus hic ratione sapiente.</p>
+                            <div class="post-action">
+                                <button>Soma byose</button><button>Sangiza</button><button>Yisibe</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--Sidebar-->
+        <div class="sidebar">
+            <div class="subscribe">
+                <form action="" class="subform">
+                    <center>
+                        <img src="../images/ifoto.jpg" id="avatar">
+                        <p>Izina ryawe</p>
+                    </center>
+                    <hr>
+                    <p>Umaze amasaha 2 mu bugenzuzi</p>
+                    <hr>
+                    <p>Ufite inkuru 2 wanditse</p>
+                    <hr>
+                    <button>Reba amakuru yawe</button>
+                </form>
+                </div>
+                <div class="ourvideo">
+                    <iframe src="https://www.youtube.com/embed/hqgsZi6q_F0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        </div>
+           
+        </div>
+        <div class="footer-row">
+                <div class="col-13">
+                    <div class="small-about about-footer">
+                        <h2>Ni gute Mu Ikoranabuhanga</h2>
+                        <p>Ni Gute ni urubuga rugamije gutuma buri muntu wese agira ubumenyi buhagije mu ikoranabuhanga, akaba ashobora kuba yakwikorera byinshi kandi agafasha n'abandi.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-13">
+                    <div class="contact">
+                        <form>
+                            <h2>Twandikire</h2>
+                            <input type="text" placeholder="Andika izina ryawe">
+                            <input type="email" placeholder="Andika emayiri yawe">
+                            <textarea placeholder="Shyiramo ubutumwa bwawe"></textarea>
+                            <button style="background-color: royalblue;">Ohereza</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-13">
+                    <div class="social">
+                        <h2>Dukurikire ku mbuga nkoranyambaga</h2>
+                        <a href="#" >Instagram</a>
+                        <a href="#" >Twitter</a>
+                        <a href="#" >Facebook</a>
+                        <a href="#" >YouTube</a>
+                    </div>
+                </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Ni Gute 2020</p>
+            <p>Made with love by <a href="#">Achille Songa</a></p>
+        </div>
+    </div>
+    <!--Login popup script-->
+<script>
+    // get the mPopup
+var mpopup = document.getElementById('mpopupBox');
+
+// get the link that opens the mPopup
+var mpLink = document.getElementById('mpopupLink');
+
+// get the close action element
+var close = document.getElementsByClassName("close")[0];
+
+// open the mPopup once the link is clicked
+mpLink.onclick = function(){
+    mpopup.style.display = "block";
+}
+
+// close the mPopup once close element is clicked
+close.onclick = function(){
+    mpopup.style.display = "none";
+}
+
+// close the mPopup when user clicks outside of the box
+window.onclick = function(event) {
+    if (event.target == mpopup) {
+        mpopup.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

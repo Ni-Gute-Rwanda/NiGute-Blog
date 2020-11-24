@@ -41,6 +41,19 @@
     padding: 10px;
     margin-bottom: 20px auto;
 }
+.logout-buttons {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-gap: 5%;
+}
+.logout-buttons button {
+    padding: 15px;
+    border: none;
+    color: #fff;
+    background-color: royalblue;
+}
 .mpopup-foot {
     padding: 2px 16px;
     background-color: rgb(45, 45, 47);
