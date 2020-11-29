@@ -42,8 +42,13 @@ body {
     padding: 10px 20px;
     margin-right: 10px;
 }
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 .navbar ul li:hover {
     background-color: royalblue;
+    transition: all 0.4s ease-in-out;
 }
 .login {
     background-color: royalblue;
@@ -54,6 +59,8 @@ body {
 }
 .login:hover {
     background-color: rgb(59, 76, 128);
+    transition: all 0.4s ease-in-out;
+
 }
 .subscribe-row {
     display: grid;
@@ -169,6 +176,7 @@ body {
 }
 .subform button:hover {
     background-color: rgb(57, 57, 65);
+    transition: all 0.4s ease-in-out;
 }
 
 .footer-row {
@@ -229,7 +237,12 @@ body {
     text-align: center;
     background-color: rgb(24, 21, 21);
     color: blanchedalmond;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
 .copyright a {
     color: blanchedalmond;
 }
@@ -237,4 +250,12 @@ body {
     width: 50%;
     margin-bottom: 0;
     bottom: 0;
+}
+#avatar-main {
+    width: 100%;
+}
+
+.active {
+    background-color: rgb(144, 124, 93);
+    transition: all 0.4s ease-in-out;
 }

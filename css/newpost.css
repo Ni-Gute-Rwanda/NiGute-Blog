@@ -1,0 +1,39 @@
+.new-post form {
+    margin: 20px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+.new-post form label{
+    margin: 10px auto 10px auto;
+}
+#post-title {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#post-submit {
+    padding: 10px;
+    outline: none;
+    background-color: royalblue;
+    color: #fff;
+    border: none;
+}
+.post-info {
+    background-color: rgb(127, 127, 141);
+    width: 100%;
+    padding: 10px;
+    color: aliceblue;
+}
+#author {
+    width: 100%;
+    padding: 10px;
+}
+#category {
+    width: 100%;
+    padding: 10px;
+}
+#post-date {
+    width: 100%;
+    padding: 10px;
+}

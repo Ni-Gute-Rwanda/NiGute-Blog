@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inkuru wanditse</title>
+    <title>Inkuru nshya</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
     <link rel="stylesheet" type="text/css" href="../css/login.css"/>
     <link rel="stylesheet" type="text/css" href="../css/soma.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/newpost.css">
+    <link rel="stylesheet" type="text/css" href="./widgEditor/css/widgEditor.css">
     <script src="../js/nav.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/soma.js"></script>
+    <script src="widgEditor/scripts/widgEditor.js"></script>
     <style>
         @media(max-width: 1000px){
             .mpopup-content {
@@ -31,8 +34,8 @@
                     
                     <ul id="nav-list">
                         <li><a href="../index.html">Ahabanza</a></li>
-                        <li><a href="./inkuru nshya.html">Inkuru nshya</a></li>
-                        <li class="active"><a href="./inkuru wanditse.html">Inkuru wanditse</a></li>
+                        <li class="active"><a href="./inkuru nshya.html">Inkuru nshya</a></li>
+                        <li><a href="./inkuru wanditse.html">Inkuru wanditse</a></li>
                         <li><a href="./ibikwerekeyeho.html">Amakuru yawe</a></li>
                         <li><a href="./ibitekerezo.html">Ibitekerezo</a></li>
                         <li class="login"><a href="javascript:void(0);" id="mpopupLink">SOHOKA</a></li>
@@ -58,12 +61,10 @@
         </div>
         <div class="subscribe-row">
             <div class="small-about">
-                <div class="small-about">
-                    <h1>Winjiye nka Mugenzuzi!</h1>
-                    <p>Uri umwanditsi.
-                    </p>
-    
-                </div>
+                <h1>Winjiye nka Mugenzuzi!</h1>
+                <p>Uri umwanditsi.
+                </p>
+
             </div>
             
         </div>
@@ -73,45 +74,38 @@
                     
                 </div>
             <!--Suggested stories-->
-            <div class="post-wrapper">
-                <h1 id="suggested">Inkuru zose wanditse</h1>
+            <div class="post-wrapper new-post">
+                <h1 id="suggested">Shyiraho inkuru nshya</h1>
                 <hr>
-                    <div class="post">
-                        <img src="../images/ifoto.jpg" alt="">
-                        <div>
-                            <h1>Umutwe w'inkuru</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eaque asperiores nihil neque quae quisquam, deserunt harum, alias ratione quidem provident mollitia. Deserunt suscipit dolore inventore, necessitatibus hic ratione sapiente.</p>
-                            <div class="post-action">
-                                <button>Soma byose</button><button>Kosora</button><button>Yarebwe <span>100</span></button><button>Yisibe</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <img src="../images/ifoto.jpg" alt="">
-                        <div>
-                            <h1>Umutwe w'inkuru</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eaque asperiores nihil neque quae quisquam, deserunt harum, alias ratione quidem provident mollitia. Deserunt suscipit dolore inventore, necessitatibus hic ratione sapiente.</p>
-                            <div class="post-action">
-                                <button>Soma byose</button><button>Sangiza</button><button>Yarebwe <span>100</span></button><button>Yisibe</button>
-                            </div>
-                        </div>
-                    </div>
+                <form>
+                    <label for="post-title">Umutwe w'inkuru</label>
+                    <input type="text" id="post-title">
+                    <hr>
+                    <label for="post-content">Inkuru irambuye</label>
+                    <textarea rows="20" id="post-content" class="widgEditor"></textarea>
+                    <button id="post-submit">Emeza</button>
+                </form>
             </div>
         </div>
         <!--Sidebar-->
         <div class="sidebar">
-            <div class="subscribe">
-                <form action="" class="subform">
-                    <center>
-                        <img src="../images/ifoto.jpg" id="avatar">
-                        <p>Izina ryawe</p>
-                    </center>
-                    <hr>
-                    <p>Umaze amasaha 2 mu bugenzuzi</p>
-                    <hr>
-                    <p>Ufite inkuru 2 wanditse</p>
-                    <hr>
-                    <button>Reba amakuru yawe</button>
+            <div class="post-info">
+                <p>Andi makuru</p>
+                <hr><br>
+                <form action="" class="post-details">
+                    <label for="author">Umwanditsi</label>
+                    <select id="author">
+                        <option>Njye</option>
+                        <option>Wowe</option>
+                    </select>
+                    <label for="category">Ikiciro k'inkuru</label>
+                    <select id="category">
+                        <option>Sobanukirwa</option>
+                        <option>Ni Gute</option>
+                        <option>Utuntu n'utundi</option>
+                    </select>
+                    <label for="post-date">Itariki</label>
+                    <input type="date" name="" id="post-date">
                 </form>
                 </div>
         </div>

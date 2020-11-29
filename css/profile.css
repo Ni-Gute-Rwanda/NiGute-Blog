@@ -1,0 +1,9 @@
+.container-3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 18%;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: start;
+    grid-gap: 2%;
+}
