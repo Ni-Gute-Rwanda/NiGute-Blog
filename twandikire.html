@@ -29,11 +29,11 @@
                 <div class="navbar" id="nav">
                     
                     <ul id="nav-list">
-                        <li class="active"><a href="#">Ahabanza</a></li>
+                        <li><a href="./index.html">Ahabanza</a></li>
                         <li><a href="./sobanukirwa.html">Sobanukirwa</a></li>
                         <li><a href="./ni-gute.html">Ni Gute</a></li>
-                        <li><a href="./amakuru.html">Amakuru</a></li>
-                        <li><a href="./twandikire.html">Twandikire</a></li>
+                        <li ><a href="./amakuru.html">Amakuru</a></li>
+                        <li   class="active"><a href="./twandikire.html">Twandikire</a></li>
                         <li>Abo turibo</li>
                         <li class="login"><a href="javascript:void(0);" id="mpopupLink">INJIRA</a></li>
                     </ul>
@@ -73,16 +73,22 @@
             
         </div>
         <div class="container-2">
-            <div class="posts">
-                <div class="mainpost">
-                    <img src="" alt="Ifoto nyamukuru" class="maincover">
-                    <h1 id="mainTitle"></h1>
-                    <p id="mainDesc"></p>
-                    <div class="post-action">
-                        <button>Soma byose</button><button>Sangiza</button>
-                    </div>
-                </div>
-                <div class="post-wrapper">
+            
+        <div class="posts"> 
+            <h1>Twandikire</h1> 
+            <p><i>Duhe igitekerezo cyangwa inyunganizi</i></p>
+            <hr>
+            <div class="contact">
+                <form>
+                    <label>Izina ryawe</label>
+                    <input type="text">
+                    <label>Email yawe</label>
+                    <input type="email">
+                    <label>Ubutumwa bwawe</label>
+                    <textarea></textarea>
+                    <input type="checkbox" name="subscribe" id="subscribe-check" style="width: 2%;text-align:start;"> Tujye tukumenyesha inkuru nshya?
+                    <input type="submit" style="background-color: royalblue;color:rgb(255, 255, 255);outline:none;border: 1px solid white;" value="Ohereza">
+                </form>
             </div>
         </div>
             <div class="sidebar">
@@ -111,15 +117,12 @@
                     </div>
                 </div>
                 <div class="col-13">
-                    <div class="contact">
-                        <form>
-                            <h2>Twandikire</h2>
-                            <input type="text" placeholder="Andika izina ryawe">
-                            <input type="email" placeholder="Andika emayiri yawe">
-                            <textarea placeholder="Shyiramo ubutumwa bwawe"></textarea>
-                            <input type="button" value="Ohereza" class="btn-ohereza" style="background-color: royalblue;color: #fff;border: 1px solid royalblue;">
-                        </form>
-                    </div>
+                    <h2>Imbuga z'ingenzi</h2>
+                    <ul style="text-align: start; color: white;">
+                        <li><a href="https://www.google.com" target="_blank" style="text-align: start; color: white;" target="_blank">Google</a></li>
+                        <li><a href="https://www.google.com" style="text-align: start; color: white;" target="_blank">Google</a></li>
+                    </ul>
+
                 </div>
                 <div class="col-13">
                     <div class="latest">
@@ -168,7 +171,6 @@ window.onclick = function(event) {
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
 <script src="../config/db.js"></script>
-<script src="./js/homepage.js"></script>
 <script src="./js/clock.js"></script>
 </body>
 </html>

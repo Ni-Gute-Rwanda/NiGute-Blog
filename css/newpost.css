@@ -37,3 +37,10 @@
     width: 100%;
     padding: 10px;
 }
+#cover-image {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color:white;
+    color: black;
+}

@@ -195,6 +195,7 @@ body {
     box-sizing: border-box;
     align-items: initial;
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 .footer-row h2 {
     color: khaki;
@@ -233,7 +234,7 @@ body {
 }
 .copyright {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     text-align: center;
     background-color: rgb(24, 21, 21);
     color: blanchedalmond;
@@ -258,4 +259,35 @@ body {
 .active {
     background-color: rgb(144, 124, 93);
     transition: all 0.4s ease-in-out;
+}
+.btn-ohereza:hover {
+    border: 5px solid white;
+}
+
+.ig, .tw, .fb, .yt {
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+}
+.ig:hover {
+    color: #bc2a8d;
+}
+.tw:hover{
+    color: #00acee;
+}
+.fb:hover{
+    color: #3b5998;
+}
+.yt:hover{
+    color: #c4302b;
+}
+.imglat {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-gap: 2%;
+    justify-content: center;
+}
+.imglat img {
+    width: 100%;
 }
