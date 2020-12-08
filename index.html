@@ -30,11 +30,12 @@
                     
                     <ul id="nav-list">
                         <li class="active"><a href="#">Ahabanza</a></li>
+                        <li><a href="./english.html">English</a></li>
                         <li><a href="./sobanukirwa.html">Sobanukirwa</a></li>
                         <li><a href="./ni-gute.html">Ni Gute</a></li>
                         <li><a href="./amakuru.html">Amakuru</a></li>
                         <li><a href="./twandikire.html">Twandikire</a></li>
-                        <li>Abo turibo</li>
+                        <li><a href="./abo-turibo.html">Abo turibo</a></li>
                         <li class="login"><a href="javascript:void(0);" id="mpopupLink">INJIRA</a></li>
                     </ul>
                 </div>
@@ -49,17 +50,17 @@
                 <div class="mpopup-main">
                     <form>
                         <!--Add username-->
-                        <label for="username">Izina ukoresha</label>
-                        <input type="text" id="username" style="margin-bottom: 20px;" required>
+                        <label for="useremail">Izina ukoresha</label>
+                        <input type="email" id="username" style="margin-bottom: 20px;" required>
                         <!--Add email-->
-                        <label for="useremail">Email</label>
-                        <input type="email" id="useremail" style="margin-bottom: 20px;" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="useremail" style="margin-bottom: 20px;" required>
                         <!--Enter to login-->
                         <input type="submit" value="Injira" id="loginbutton">
                     </form>
                 </div>
                 <div class="mpopup-foot">
-                    <p>Wifuza gukorana natwe?<a href="#">  Kanda hano</a></p>
+                    <p>Wifuza gukorana natwe?<a href="./twandikire.html">  Kanda hano</a></p>
                 </div>
             </div>
         </div>
@@ -68,23 +69,36 @@
                 <h1>Ni gute Mu Ikoranabuhanga</h1>
                 <p>Ni Gute ni urubuga rugamije gutuma buri muntu wese agira ubumenyi buhagije mu ikoranabuhanga, akaba ashobora kuba yakwikorera byinshi kandi agafasha n'abandi.
                 </p>
-                <button style="background-color: royalblue;">Menya byinshi</button><button style="background-color: rgb(83, 75, 61);">Twandikire</button>
+                <button style="background-color: royalblue;"><a href="./abo-turibo.html" style="color: white;text-decoration:none;">Abo turibo</a></button><button style="background-color: rgb(83, 75, 61);"><a href="./twandikire.html" style="color: white;text-decoration:none;">Twandikire</a></button>
             </div>
             
         </div>
         <div class="container-2">
             <div class="posts">
-                <div class="mainpost">
-                    <img src="" alt="Ifoto nyamukuru" class="maincover">
-                    <h1 id="mainTitle"></h1>
-                    <p id="mainDesc"></p>
-                    <div class="post-action">
-                        <button>Soma byose</button><button>Sangiza</button>
+                <div class="mainpost" style="position: relative;margin: 0 auto;">
+                    <img src="" alt="Ifoto nyamukuru" class="maincover" style="position: relative;">
+                    <div style="position: absolute;background-color: black;color: white;bottom: 0;width: 100%;padding-right: 20px;padding-left: 20px;opacity: 60%;">
+                        <h1 id="mainTitle"></h1>
+                        <p id="mainDesc"></p>
+                    </div>
+                    <div class="middle">
+                        <p></p>
+                    </div>
+                    
+                </div>
+                <div class="post-wrapper index-post">
+                    <div class="kiny-post">
+                        <h2>Inkuru mu kinyarwanda</h2>
+                        <hr>
+                    
+                    </div>
+                    <div class="eng-post">
+                        <h2>Articles in English</h2>
+                        <hr>
+                    
                     </div>
                 </div>
-                <div class="post-wrapper">
             </div>
-        </div>
             <div class="sidebar">
                 <div class="subscribe">
                 <form action="" class="subform">
@@ -103,20 +117,20 @@
                         </p>
 
                         <div class="social">
-                            <a href="#"><button class="fab fa-instagram ig"></button></a>
-                            <a href="#"><button class="fab fa-twitter tw"></button></a>
-                            <a href="#" ><button class="fab fa-facebook-f fb"></button></a>
-                            <a href="#" ><button class="fab fa-youtube yt"></button></a>
+                            <a href="https://www.instagram.com/nigute_co_rw" target="_blank"><button class="fab fa-instagram ig"></button></a>
+                            <a href="https://www.twitter.com/gute_ni" target="_blank"><button class="fab fa-twitter tw"></button></a>
+                            <a href="https://www.facebook.com/niguterwanda" target="_blank" ><button class="fab fa-facebook-f fb"></button></a>
+                            <a href="https://www.youtube.com/channel/UCt59iAym8A5FQp_oID7CGvw" target="_blank"><button class="fab fa-youtube yt"></button></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-13">
                     <div class="contact">
-                        <form>
+                        <form class="form-contact">
                             <h2>Twandikire</h2>
-                            <input type="text" placeholder="Andika izina ryawe">
-                            <input type="email" placeholder="Andika emayiri yawe">
-                            <textarea placeholder="Shyiramo ubutumwa bwawe"></textarea>
+                            <input type="text" placeholder="Andika izina ryawe" class="sender">
+                            <input type="email" placeholder="Andika emayiri yawe" class="senderEmail">
+                            <textarea placeholder="Shyiramo ubutumwa bwawe" class="senderMessage"></textarea>
                             <input type="button" value="Ohereza" class="btn-ohereza" style="background-color: royalblue;color: #fff;border: 1px solid royalblue;">
                         </form>
                     </div>
@@ -125,7 +139,6 @@
                     <div class="latest">
                         <h2>Amafoto</h2>
                     <div class="imglat">
-                        <img src="./images/ifoto.jpg" alt="">
                     </div>
                     </div>
                 </div>
@@ -169,6 +182,7 @@ window.onclick = function(event) {
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
 <script src="../config/db.js"></script>
 <script src="./js/homepage.js"></script>
+<script src="./js/contact.js"></script>
 <script src="./js/clock.js"></script>
 </body>
 </html>

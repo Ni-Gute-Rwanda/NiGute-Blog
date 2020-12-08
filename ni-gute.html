@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ni Gute</title>
+    <title>Ni Gute | Bikorwa bite?</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
     <link rel="stylesheet" type="text/css" href="css/login.css"/>
@@ -30,11 +30,12 @@
                     
                     <ul id="nav-list">
                         <li><a href="./index.html">Ahabanza</a></li>
+                        <li><a href="./english.html">English</a></li>
                         <li><a href="./sobanukirwa.html">Sobanukirwa</a></li>
                         <li   class="active"><a href="./ni-gute.html">Ni Gute</a></li>
                         <li><a href="./amakuru.html">Amakuru</a></li>
                         <li><a href="./twandikire.html">Twandikire</a></li>
-                        <li>Abo turibo</li>
+                        <li><a href="./abo-turibo.html">Abo turibo</a></li>
                         <li class="login"><a href="javascript:void(0);" id="mpopupLink">INJIRA</a></li>
                     </ul>
                 </div>
@@ -49,26 +50,23 @@
                 <div class="mpopup-main">
                     <form>
                         <!--Add username-->
-                        <label for="username">Izina ukoresha</label>
-                        <input type="text" id="username" style="margin-bottom: 20px;" required>
+                        <label for="useremail">Izina ukoresha</label>
+                        <input type="email" id="username" style="margin-bottom: 20px;" required>
                         <!--Add email-->
-                        <label for="useremail">Email</label>
-                        <input type="email" id="useremail" style="margin-bottom: 20px;" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="useremail" style="margin-bottom: 20px;" required>
                         <!--Enter to login-->
                         <input type="submit" value="Injira" id="loginbutton">
                     </form>
                 </div>
                 <div class="mpopup-foot">
-                    <p>Wifuza gukorana natwe?<a href="#">  Kanda hano</a></p>
+                    <p>Wifuza gukorana natwe?<a href="./twandikire.html">  Kanda hano</a></p>
                 </div>
             </div>
         </div>
         <div class="subscribe-row">
             <div class="small-about">
                 <h1>Ni gute Mu Ikoranabuhanga</h1>
-                <p>Ni Gute ni urubuga rugamije gutuma buri muntu wese agira ubumenyi buhagije mu ikoranabuhanga, akaba ashobora kuba yakwikorera byinshi kandi agafasha n'abandi.
-                </p>
-                <button style="background-color: royalblue;">Menya byinshi</button><button style="background-color: rgb(83, 75, 61);">Twandikire</button>
             </div>
             
         </div>
@@ -78,7 +76,7 @@
             <h1>Icyiciro: Ni Gute</h1> 
             <p><i>Inkuru zigufasha kumenya uko bikorwa</i></p>
             <hr>
-            <div class="post-wrapper">
+            <div class="gute-post-wrapper">
             </div>
         </div>
             <div class="sidebar">
@@ -164,7 +162,7 @@ window.onclick = function(event) {
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
 <script src="../config/db.js"></script>
-<script src="./js/homepage.js"></script>
+<script src="./ni-gute.js"></script>
 <script src="./js/clock.js"></script>
 </body>
 </html>

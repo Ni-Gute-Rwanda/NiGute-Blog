@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ni Gute | Sobanukirwa</title>
+    <title>English stories</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
     <link rel="stylesheet" type="text/css" href="css/login.css"/>
@@ -29,14 +29,14 @@
                 <div class="navbar" id="nav">
                     
                     <ul id="nav-list">
-                        <li><a href="./index.html">Ahabanza</a></li>
-                        <li><a href="./english.html">English</a></li>
-                        <li  class="active"><a href="./sobanukirwa.html">Sobanukirwa</a></li>
-                        <li><a href="./ni-gute.html">Ni Gute</a></li>
-                        <li><a href="./amakuru.html">Amakuru</a></li>
-                        <li><a href="./twandikire.html">Twandikire</a></li>
-                        <li><a href="./abo-turibo.html">Abo turibo</a></li>
-                        <li class="login"><a href="javascript:void(0);" id="mpopupLink">INJIRA</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li  class="active"><a href="./english.html">English</a></li>
+                        <li><a href="./sobanukirwa.html">Did you know?</a></li>
+                        <li><a href="./ni-gute.html">How to</a></li>
+                        <li><a href="./amakuru.html">News</a></li>
+                        <li><a href="./twandikire.html">Contact us</a></li>
+                        <li><a href="./abo-turibo.html">About us</a></li>
+                        <li class="login"><a href="javascript:void(0);" id="mpopupLink">LOGIN</a></li>
                     </ul>
                 </div>
         </div>
@@ -45,12 +45,12 @@
             <div class="mpopup-content">
                 <div class="mpopup-head">
                     <span class="close">×</span>
-                    <h2>Injira mu bugenzuzi</h2>
+                    <h2>Admin login</h2>
                 </div>
                 <div class="mpopup-main">
                     <form>
                         <!--Add username-->
-                        <label for="useremail">Izina ukoresha</label>
+                        <label for="useremail">Username</label>
                         <input type="email" id="username" style="margin-bottom: 20px;" required>
                         <!--Add email-->
                         <label for="password">Password</label>
@@ -60,32 +60,32 @@
                     </form>
                 </div>
                 <div class="mpopup-foot">
-                    <p>Wifuza gukorana natwe?<a href="./twandikire.html">  Kanda hano</a></p>
+                    <p>Want to work with us?<a href="./twandikire.html">  Click here</a></p>
                 </div>
             </div>
         </div>
         <div class="subscribe-row">
             <div class="small-about">
-                <h1>Ni gute Mu Ikoranabuhanga</h1>
+                <h1>How in technology</h1>
             </div>
             
         </div>
         <div class="container-2">
             
         <div class="posts"> 
-            <h1>Icyiciro: Sobanukirwa</h1> 
-            <p><i>Inkuru zigufasha gusobanukirwa byinshi utari uzi</i></p>
+            <h1>English stories</h1> 
+            <p><i>All articles written in english are here</i></p>
             <hr>
-            <div class="sob-post-wrapper">
+            <div class="en-post-wrapper">
                 <p class="noPost"></p>
             </div>
         </div>
             <div class="sidebar">
                 <div class="subscribe">
                 <form action="" class="subform">
-                    <h2>Duhe email addressi yawe tujye tukugezaho inkuru nshya buri gihe</h2>
-                    <input type="email" placeholder="Shyiramo emayiri yawe" required>
-                    <button>Ohereza</button>
+                    <h2>Subscribe to our newsletter</h2>
+                    <input type="email" placeholder="Enter your email address..." required>
+                    <button>Subscribe</button>
                 </form>
                 </div>
             </div>
@@ -93,7 +93,7 @@
         <div class="footer-row">
                 <div class="col-13">
                     <div class="small-about about-footer">
-                        <h2>Ni gute Mu Ikoranabuhanga</h2>
+                        <h2>Ni gute in technology</h2>
                         <p>Ni Gute ni urubuga rugamije gutuma buri muntu wese agira ubumenyi buhagije mu ikoranabuhanga, akaba ashobora kuba yakwikorera byinshi kandi agafasha n'abandi.
                         </p>
 
@@ -108,17 +108,17 @@
                 <div class="col-13">
                     <div class="contact">
                         <form>
-                            <h2>Twandikire</h2>
-                            <input type="text" placeholder="Andika izina ryawe">
-                            <input type="email" placeholder="Andika emayiri yawe">
-                            <textarea placeholder="Shyiramo ubutumwa bwawe"></textarea>
-                            <input type="button" value="Ohereza" class="btn-ohereza" style="background-color: royalblue;color: #fff;border: 1px solid royalblue;">
+                            <h2>Contact us</h2>
+                            <input type="text" placeholder="Enter your name">
+                            <input type="email" placeholder="Enter your email">
+                            <textarea placeholder="Enter your message"></textarea>
+                            <input type="button" value="Send" class="btn-ohereza" style="background-color: royalblue;color: #fff;border: 1px solid royalblue;">
                         </form>
                     </div>
                 </div>
                 <div class="col-13">
                     <div class="latest">
-                        <h2>Amafoto</h2>
+                        <h2>Images</h2>
                     <div class="imglat">
                         <img src="./images/ifoto.jpg" alt="">
                     </div>
@@ -163,7 +163,7 @@ window.onclick = function(event) {
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-storage.js"></script>
 <script src="../config/db.js"></script>
-<script src="./sobanukirwa.js"></script>
+<script src="./english.js"></script>
 <script src="./js/clock.js"></script>
 </body>
 </html>
